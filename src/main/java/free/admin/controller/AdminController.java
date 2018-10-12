@@ -11,27 +11,27 @@ public class AdminController {
 	@RequestMapping("/Commoncode")
 	public String commoncode() {
 		
-		return "include/commoncode";
+		return "ADMIN/00_COMMON/commoncode";
 	}
 	
 	@RequestMapping("/Freeln")
 	public String freeln() {
-		return "include/freeln";
+		return "ADMIN/01_FLEENL/freeln";
 	}
 	
 	@RequestMapping("/Project")
 	public String project() {
-		return "include/project";
+		return "ADMIN/02_PROJECT/project";
 	}
 	
 	@RequestMapping("/Charge")
 	public String charge() {
-		return "include/charge";
+		return "ADMIN/03_CHARGE/charge";
 	}
 	
 	@RequestMapping("/Client")
 	public String client() {
-		return "include/client";
+		return "ADMIN/04_CLIENT/client";
 	}
 	
 	

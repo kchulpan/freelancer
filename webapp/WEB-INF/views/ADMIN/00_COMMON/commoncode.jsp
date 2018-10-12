@@ -39,7 +39,7 @@
   
 <!-- side_menu -->
   <nav class="nav">
-  	<%@ include file="../include/header.jspf" %>
+  	<%@ include file="../include/nav.jspf" %>
   </nav>
 
 <!-- main -->
