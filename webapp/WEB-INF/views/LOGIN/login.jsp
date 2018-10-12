@@ -117,7 +117,6 @@ body{padding:260px;}
   <div class="font2"><a href="">아이디찾기</a>/</div>
   <div class="font2"><a href="">비밀번호 찾기</a></div>
   
- 
   </div>
   
  
