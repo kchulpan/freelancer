@@ -3,7 +3,7 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
-  <mapper namespace="Board">
+  <mapper namespace="Charge">
   	<!-- 결과담을 Map 작성 -->
   <!-- 	<resultMap id="BoardListMap" type="">
   		<result property="idx"		 column="IDX" 		javaType="int"/>
@@ -19,6 +19,7 @@
   		<result property="nref"		 column="NREF" 		javaType="int"/>
   		<result property="delnum"	 column="DELNUM" 	javaType="int"/>
   	</resultMap>	
+  
    	<insert id="BoardInsert"
   			statementType="CALLABLE"
   			parameterType="">
@@ -33,16 +34,17 @@
 		#{nref,    mode=IN, jdbcType=INTEGER}
 		)}
   	</insert>
+  	-->
   	
-  	<select id="BoardList"
+<!--   	<select id="ChargeList"
   			statementType="CALLABLE"
   			parameterType="">
 		{CALL PKG_BOARD.PROC_BOARD_LIST(
 		#{menu_id, mode=IN,  jdbcType=VARCHAR},
 		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=BoardListMap}
 		)}
-  	</select>
- 
+  	</select> -->
+  	<!--
   	<select id="BoardContent"
   			statementType="CALLABLE"
   			parameterType="">

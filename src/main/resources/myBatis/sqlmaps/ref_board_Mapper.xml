@@ -19,7 +19,6 @@
   		<result property="nref"		 column="NREF" 		javaType="int"/>
   		<result property="delnum"	 column="DELNUM" 	javaType="int"/>
   	</resultMap>	
-  
    	<insert id="BoardInsert"
   			statementType="CALLABLE"
   			parameterType="">
@@ -43,7 +42,7 @@
 		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=BoardListMap}
 		)}
   	</select>
-  	
+ 
   	<select id="BoardContent"
   			statementType="CALLABLE"
   			parameterType="">

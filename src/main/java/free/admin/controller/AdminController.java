@@ -1,7 +1,14 @@
 package free.admin.controller;
 
+import java.util.HashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import free.admin.service.ChargeListService;
 
 @Controller
 public class AdminController {
@@ -34,5 +41,17 @@ public class AdminController {
 		return "ADMIN/04_CLIENT/client";
 	}
 	
+	/* 담당자 조회 */
 	
+/*	@Autowired
+	ChargeListService chargeListService;
+	
+	@RequestMapping("/ChargeList")
+	public ModelAndView chrList(@RequestParam HashMap<String,Object> map) 
+	{
+		ModelAndView mav = new ModelAndView();
+		chargeListService.chrList(map);
+		mav.
+		return "";
+	}*/
 }

@@ -5,7 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>DDJY University</title>
+<title>DDJY Free-Lancer Management</title>
+<style>
+	.column{
+		float:left;
+		font-size:16px;
+	}
+
+</style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<!-- css -->
@@ -48,7 +56,36 @@
     </div>
     	
     <div class="sections">
-    <!-- 내용넣기! -->
+    	<h1>담당자 조회/관리</h1>
+    	<div>
+    		<div class="search">담당자명:
+    			<input type="text" size=10>
+    			<button>조회</button>
+    			<button>등록</button>
+    		</div>
+    		<div cell-padding="0" cell-spacing="0">
+	    		<div class=column>순번</div>
+	    		<div class=column>담당자아이디</div>
+	    		<div class=column>담당자명</div>
+	    		<div class=column>소속회사</div>
+	    		<div class=column>부서</div>
+	    		<div class=column>직위</div>
+	    		<div class=column>연락처</div>
+	    		<div class=column>메일주소</div>
+    		</div>
+    		<c:forEach var="chr" items="#{chrList}">
+    		<div style="clear:both;">
+	    		<div class=column>#{chr.rownum}</div>
+	    		<div class=column>#{chr.charge_id}</div>
+	    		<div class=column>#{chr.charge_nm}</div>
+	    		<div class=column>#{chr.company_name}</div>
+	    		<div class=column>#{chr.org_id}</div>
+	    		<div class=column>#{chr.position_nm}</div>
+	    		<div class=column>#{chr.charge_phone}</div>
+	    		<div class=column>#{chr.charge_mail_1}</div>
+    		</div>
+    		</c:forEach>
+    	</div>
     </div>
       
   </article>
