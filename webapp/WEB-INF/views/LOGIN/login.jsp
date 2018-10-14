@@ -12,70 +12,8 @@
 	
 	<title>Login</title>
 	
-	    <!-- Bootstrap core CSS-->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	
-	    <!-- Custom fonts for this template-->
-	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-	
-	 <!-- Page level plugin CSS-->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-	
-	    <!-- Custom styles for this template-->
-	<link href="css/mainpage/sb-admin.css" rel="stylesheet">
-	<!-- <style>
-
-  	input[type="radio"] { 
- 		display:inline-block;
-  		margin:0px 0px 15px 55px;
-} 
-  	
-	</style> -->
 </head>
- <!-- <body class="bg-dark">
-
-<<<<<<< HEAD
-    <div class="container">
-      <div class="card card-login mx-auto mt-5">
-        <div class="card-header">로그인</div>
-        <div class="card-body">
-          <form>
-          	<label class="radio-inline">
-          		<input type="radio" name="optradio" checked="checked">&nbsp;&nbsp;클라이언트
-          	</label>
-          	<label class="radio-inline">
-          		<input type="radio" name="optradio">&nbsp;&nbsp;프리랜서
-          	</label>
-            <div class="form-group">
-              <div class="form-label-group">
-                <input type="text" id="inputEmail" class="form-control" placeholder="id" required="required" autofocus="autofocus">
-                <label for="inputEmail">이메일을 입력하세요</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                <label for="inputPassword">비밀번호를 입력하세요</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="remember-me">
-                  비밀번호 저장
-                </label>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block" href="/">로그인</a>
-          </form>
-          <div class="text-center">
-            <a class="d-block small mt-3" href="Register">회원가입</a>
-            <a class="d-block small" href="Forgot-Password">비밀번호를 잊어버리셨나요?</a>
-          </div>
-        </div>
-      </div>
-    </div>
-======= -->
+ 
 <body>
   
  <div id="wrap">
@@ -91,15 +29,6 @@
 	  <div class="font">
 		<input type="password" class="password" name="password" placeholder="비밀번호 입력" />
 	  </div>
-
-
-   <!--  Bootstrap core JavaScript-->
-   <!--  <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    Core plugin JavaScript
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
- -->
  </form>
 </div>
 </body>
