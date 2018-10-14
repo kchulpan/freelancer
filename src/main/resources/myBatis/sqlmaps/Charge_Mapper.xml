@@ -33,9 +33,10 @@
   	
    	<select id="ChargeList"
   			statementType="CALLABLE"
-  			parameterType="free.admin.vo.ChargeListVo">
+  			parameterType= "hashmap"
+  			resultType="free.admin.vo.ChargeListVo">
 		{CALL PKG_CHARGE.PROC_CHARGE_LIST(
-		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=ChargeListMap}
+		#{result,  mode=OUT, jdbcType=CURSOR, javaType=RESULTSET, resultMap=ChargeListMap}
 		)}
   	</select>
   	<!--

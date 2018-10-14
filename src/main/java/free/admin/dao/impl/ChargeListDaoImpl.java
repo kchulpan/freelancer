@@ -20,7 +20,7 @@ public class ChargeListDaoImpl implements ChargeListDao
 	public List<ChargeListVo> chargeList(HashMap<String,Object> map) 
 	{
 		
-		sqlSession.selectList("Charge.ChargeList");
+		sqlSession.selectList("Charge.ChargeList", map);
 		List<ChargeListVo>  chargeList = (List<ChargeListVo>)map.get("result");
 		return chargeList;
 	}
