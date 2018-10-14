@@ -34,6 +34,7 @@
 </head>
  <body class="bg-dark">
 
+<<<<<<< HEAD
     <div class="container">
       <div class="card card-login mx-auto mt-5">
         <div class="card-header">로그인</div>
@@ -74,6 +75,24 @@
         </div>
       </div>
     </div>
+=======
+<body>
+  
+  <div id="wrap">
+  <p><img src="/img/mainpage/school4.jpg"/></p>
+  
+  <div style="text-align:center">
+  <caption><h2>로그인</h2></caption>
+  </div>
+  <form action="/SubPage" method="GET">
+  <div class="font">
+   <input type="text" class="userid" id="userid" name="userid" placeholder="아이디 입력"  />  
+  </div>
+  
+  <div class="font">
+	<input type="password" class="password" name="password" placeholder="비밀번호 입력" />
+  </div>
+>>>>>>> 6d030de2e9abe626867d58dddc40a5bb1c3beece
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -82,5 +101,28 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+<<<<<<< HEAD
   </body>
+=======
+  <button class="login" >로그인</button>
+  </form>
+  <form action="/Freelancer" method="GET">
+  	<button class="login" >프리랜서페이지로 이동</button>
+  </form>
+
+
+  
+  </br>
+  <div class="register">
+   <div class="font2">아이디 저장<input type="checkbox"></input></div>
+  <div class="font2"><a href="">아이디찾기</a>/</div>
+  <div class="font2"><a href="">비밀번호 찾기</a></div>
+  
+  </div>
+  
+ 
+ </div>
+ 
+</body>
+>>>>>>> 6d030de2e9abe626867d58dddc40a5bb1c3beece
 </html>

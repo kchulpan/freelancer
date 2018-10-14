@@ -14,6 +14,13 @@ import free.admin.service.ChargeListService;
 public class AdminController {
 	
 	/*include*/
+	@RequestMapping("/Freelancer")
+	public String Freelancer()
+	{
+		
+		return "CLIENT/client";
+	}
+	
 	
 	@RequestMapping("/Commoncode")
 	public String commoncode() {
@@ -31,27 +38,15 @@ public class AdminController {
 		return "ADMIN/02_PROJECT/project";
 	}
 	
-	@RequestMapping("/Charge")
+/*	페이지 새로 뺏음 -> AdminChargeController.java
+    @RequestMapping("/Charge")
 	public String charge() {
 		return "ADMIN/03_CHARGE/charge";
-	}
+	}*/
 	
 	@RequestMapping("/Client")
 	public String client() {
 		return "ADMIN/04_CLIENT/client";
 	}
 	
-	/* 담당자 조회 */
-	
-/*	@Autowired
-	ChargeListService chargeListService;
-	
-	@RequestMapping("/ChargeList")
-	public ModelAndView chrList(@RequestParam HashMap<String,Object> map) 
-	{
-		ModelAndView mav = new ModelAndView();
-		chargeListService.chrList(map);
-		mav.
-		return "";
-	}*/
 }

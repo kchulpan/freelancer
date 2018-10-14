@@ -48,7 +48,9 @@
     </div>
     	
     <div class="sections">
-    <!-- 내용넣기! -->
+    <div border=1 width=600 height=400>
+     dasdfsafasdf
+    </div>
     </div>
       
   </article>
