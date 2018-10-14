@@ -5,22 +5,18 @@
     
   <mapper namespace="Charge">
   	<!-- 결과담을 Map 작성 -->
-  <!-- 	<resultMap id="BoardListMap" type="">
-  		<result property="idx"		 column="IDX" 		javaType="int"/>
-  		<result property="menu_id"	 column="MENU_ID" 	javaType="string"/>
-  		<result property="title"	 column="TITLE" 	javaType="string"/>
-  		<result property="cont"		 column="CONT" 		javaType="string"/>
-  		<result property="writer"	 column="WRITER" 	javaType="string"/>
-  		<result property="regdate"	 column="REGDATE"   javaType="string"/>
-  		<result property="readcount" column="READCOUNT" javaType="int"/>
-  		<result property="bnum"		 column="BNUM" 		javaType="int"/>
-  		<result property="lvl"		 column="LVL" 		javaType="int"/>
-  		<result property="step"		 column="STEP" 		javaType="int"/>
-  		<result property="nref"		 column="NREF" 		javaType="int"/>
-  		<result property="delnum"	 column="DELNUM" 	javaType="int"/>
-  	</resultMap>	
+   	<resultMap id="ChargeListMap" type="free.admin.vo.ChargeListVo">
+  		<result property="rownum"		 column="ROWNUM" 		javaType="int"/>
+  		<result property="charge_id"	 column="CHARGE_ID" 	javaType="string"/>
+  		<result property="charge_nm"	 column="CHARGE_NM" 	javaType="string"/>
+  		<result property="company_name"	 column="company_name" 	javaType="string"/>
+  		<result property="org_id"	 	 column="org_id" 		javaType="string"/>
+  		<result property="position_nm"	 column="position_nm"   javaType="string"/>
+  		<result property="charge_phone"  column="charge_phone" 	javaType="string"/>
+  		<result property="charge_mail_1" column="charge_mail_1"	javaType="string"/>
+  	</resultMap>
   
-   	<insert id="BoardInsert"
+<!--    	<insert id="BoardInsert"
   			statementType="CALLABLE"
   			parameterType="">
 		{CALL PKG_BOARD.PROC_BOARD_INSERT(
@@ -33,17 +29,15 @@
 		#{step,    mode=IN, jdbcType=INTEGER},
 		#{nref,    mode=IN, jdbcType=INTEGER}
 		)}
-  	</insert>
-  	-->
+  	</insert> -->
   	
-<!--   	<select id="ChargeList"
+   	<select id="ChargeList"
   			statementType="CALLABLE"
-  			parameterType="">
-		{CALL PKG_BOARD.PROC_BOARD_LIST(
-		#{menu_id, mode=IN,  jdbcType=VARCHAR},
-		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=BoardListMap}
+  			parameterType="free.admin.vo.ChargeListVo">
+		{CALL PKG_CHARGE.PROC_CHARGE_LIST(
+		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=ChargeListMap}
 		)}
-  	</select> -->
+  	</select>
   	<!--
   	<select id="BoardContent"
   			statementType="CALLABLE"

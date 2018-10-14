@@ -56,7 +56,7 @@
     </div>
     	
     <div class="sections">
-    	<h1>담당자 조회/관리</h1>
+    	<h2>담당자 조회/관리</h2>
     	<div>
     		<div class="search">담당자명:
     			<input type="text" size=10>
@@ -73,18 +73,20 @@
 	    		<div class=column>연락처</div>
 	    		<div class=column>메일주소</div>
     		</div>
-    		<%-- <c:forEach var="chr" items="#{chrList}"> --%>
-    		<div style="clear:both;">
-	    		<div class=column>#{chr.rownum}</div>
-	    		<div class=column>#{chr.charge_id}</div>
-	    		<div class=column>#{chr.charge_nm}</div>
-	    		<div class=column>#{chr.company_name}</div>
-	    		<div class=column>#{chr.org_id}</div>
-	    		<div class=column>#{chr.position_nm}</div>
-	    		<div class=column>#{chr.charge_phone}</div>
-	    		<div class=column>#{chr.charge_mail_1}</div>
-    		</div>
-    		<%-- </c:forEach> --%>
+    		<c:forEach var="chr" items="${chargeList}">
+	    		<div style="clear:both;">
+		    		<a href="/Charge_p1?charge_id=${chr.charge_id}">
+		 	    		<div class=column>${chr.rownum}</div>
+			    		<div class=column>${chr.charge_id}</div>
+			    		<div class=column>${chr.charge_nm}</div>
+			    		<div class=column>${chr.company_name}</div>
+			    		<div class=column>${chr.org_id}</div>
+			    		<div class=column>${chr.position_nm}</div>
+			    		<div class=column>${chr.charge_phone}</div>
+			    		<div class=column>${chr.charge_mail_1}</div>
+		    		</a>
+	    		</div>
+    		</c:forEach>
     	</div>
     </div>
       

@@ -105,12 +105,18 @@ body{padding:260px;}
   </div>
   
   <div class="font">
-	<input type="password" class="password" name="passwork" placeholder="비밀번호 입력" />
+	<input type="password" class="password" name="password" placeholder="비밀번호 입력" />
   </div>
 
 
   <button class="login" >로그인</button>
   </form>
+  <form action="/Freelancer" method="GET">
+  	<button class="login" >프리랜서페이지로 이동</button>
+  </form>
+
+
+  
   </br>
   <div class="register">
    <div class="font2">아이디 저장<input type="checkbox"></input></div>
