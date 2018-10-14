@@ -1,13 +1,6 @@
 package free.admin.controller;
-
-
-
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-
-
 
 @Controller
 public class AdminController {
@@ -41,12 +34,6 @@ public class AdminController {
 	public String project() {
 		return "ADMIN/02_PROJECT/project";
 	}
-	
-/*	�럹�씠吏� �깉濡� 類륁쓬 -> AdminChargeController.java
-    @RequestMapping("/Charge")
-	public String charge() {
-		return "ADMIN/03_CHARGE/charge";
-	}*/
 	
 	@RequestMapping("/Client")
 	public String client() {

@@ -22,7 +22,6 @@ public class AdminChargeController {
 	@Autowired
 	ChargeListService chargeListService;
 	
-	/* �떞�떦�옄 議고쉶 */
 	@RequestMapping("/Charge")
 	public ModelAndView chargeList(@RequestParam HashMap<String,Object> map) 
 	{
@@ -33,7 +32,7 @@ public class AdminChargeController {
 		mav.setViewName("ADMIN/03_CHARGE/charge");
 		return mav;
 	}
-	/*�떞�떦�옄 �긽�꽭 �럹�씠吏�*/
+	
 	@RequestMapping("/Charge_p1")
 	public String chargeDetail()
 	{
