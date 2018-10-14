@@ -1,17 +1,21 @@
 package free.admin.controller;
 
-import java.util.HashMap;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
-import free.admin.service.ChargeListService;
+
+
 
 @Controller
 public class AdminController {
+	
+	@RequestMapping("/")
+	public String login() {
+		return "LOGIN/login";
+	}
 	
 	/*include*/
 	@RequestMapping("/Freelancer")
@@ -38,7 +42,7 @@ public class AdminController {
 		return "ADMIN/02_PROJECT/project";
 	}
 	
-/*	페이지 새로 뺏음 -> AdminChargeController.java
+/*	�럹�씠吏� �깉濡� 類륁쓬 -> AdminChargeController.java
     @RequestMapping("/Charge")
 	public String charge() {
 		return "ADMIN/03_CHARGE/charge";

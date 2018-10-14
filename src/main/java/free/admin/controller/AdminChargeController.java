@@ -15,12 +15,14 @@ import free.admin.vo.ChargeListVo;
 @Controller
 public class AdminChargeController {
 	
+	
+	
 	/*include*/
 	
 	@Autowired
 	ChargeListService chargeListService;
 	
-	/* 담당자 조회 */
+	/* �떞�떦�옄 議고쉶 */
 	@RequestMapping("/Charge")
 	public ModelAndView chargeList(@RequestParam HashMap<String,Object> map) 
 	{
@@ -31,7 +33,7 @@ public class AdminChargeController {
 		mav.setViewName("ADMIN/03_CHARGE/charge");
 		return mav;
 	}
-	/*담당자 상세 페이지*/
+	/*�떞�떦�옄 �긽�꽭 �럹�씠吏�*/
 	@RequestMapping("/Charge_p1")
 	public String chargeDetail()
 	{

@@ -23,16 +23,16 @@
 	
 	    <!-- Custom styles for this template-->
 	<link href="css/mainpage/sb-admin.css" rel="stylesheet">
-	<style>
+	<!-- <style>
 
   	input[type="radio"] { 
  		display:inline-block;
   		margin:0px 0px 15px 55px;
 } 
   	
-	</style>
+	</style> -->
 </head>
- <body class="bg-dark">
+ <!-- <body class="bg-dark">
 
 <<<<<<< HEAD
     <div class="container">
@@ -75,54 +75,42 @@
         </div>
       </div>
     </div>
-=======
+======= -->
 <body>
   
-  <div id="wrap">
+ <div id="wrap">
   <p><img src="/img/mainpage/school4.jpg"/></p>
   
   <div style="text-align:center">
-  <caption><h2>로그인</h2></caption>
+ 	 <caption><h2>로그인</h2></caption>
   </div>
   <form action="/SubPage" method="GET">
-  <div class="font">
-   <input type="text" class="userid" id="userid" name="userid" placeholder="아이디 입력"  />  
-  </div>
-  
-  <div class="font">
-	<input type="password" class="password" name="password" placeholder="비밀번호 입력" />
-  </div>
->>>>>>> 6d030de2e9abe626867d58dddc40a5bb1c3beece
+	  <div class="font">
+	   <input type="text" class="userid" id="userid" name="userid" placeholder="아이디 입력"  />  
+	  </div>
+	  <div class="font">
+		<input type="password" class="password" name="password" placeholder="비밀번호 입력" />
+	  </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
+
+   <!--  Bootstrap core JavaScript-->
+   <!--  <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Core plugin JavaScript-->
+    Core plugin JavaScript
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<<<<<<< HEAD
-  </body>
-=======
-  <button class="login" >로그인</button>
-  </form>
+ -->
+ </form>
+</div>
+</body>
+ 	 <button class="login" >로그인</button>
   <form action="/Freelancer" method="GET">
   	<button class="login" >프리랜서페이지로 이동</button>
   </form>
-
-
-  
   </br>
   <div class="register">
-   <div class="font2">아이디 저장<input type="checkbox"></input></div>
-  <div class="font2"><a href="">아이디찾기</a>/</div>
-  <div class="font2"><a href="">비밀번호 찾기</a></div>
-  
+   	<div class="font2">아이디 저장<input type="checkbox"></input></div>
+ 	<div class="font2"><a href="">아이디찾기</a>/</div>
+  	<div class="font2"><a href="">비밀번호 찾기</a></div>
   </div>
-  
- 
- </div>
- 
-</body>
->>>>>>> 6d030de2e9abe626867d58dddc40a5bb1c3beece
 </html>
