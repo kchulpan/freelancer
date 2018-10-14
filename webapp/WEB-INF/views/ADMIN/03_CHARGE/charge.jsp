@@ -73,7 +73,7 @@
 	    		<div class=column>연락처</div>
 	    		<div class=column>메일주소</div>
     		</div>
-    		<c:forEach var="chr" items="#{chrList}">
+    		<%-- <c:forEach var="chr" items="#{chrList}"> --%>
     		<div style="clear:both;">
 	    		<div class=column>#{chr.rownum}</div>
 	    		<div class=column>#{chr.charge_id}</div>
@@ -84,7 +84,7 @@
 	    		<div class=column>#{chr.charge_phone}</div>
 	    		<div class=column>#{chr.charge_mail_1}</div>
     		</div>
-    		</c:forEach>
+    		<%-- </c:forEach> --%>
     	</div>
     </div>
       
