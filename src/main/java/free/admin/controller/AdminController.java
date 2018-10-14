@@ -13,6 +13,12 @@ import free.admin.service.ChargeListService;
 @Controller
 public class AdminController {
 	
+	@RequestMapping("/")
+	public String login()
+	{	
+		return "LOGIN/login";
+	}
+	
 	/*include*/
 	@RequestMapping("/Freelancer")
 	public String Freelancer()
